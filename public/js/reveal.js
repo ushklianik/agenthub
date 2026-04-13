@@ -1,12 +1,3 @@
-// ============================================================
-// OptimizeHub Analytics SDK v4.2.1
-// Personalization & A/B testing — must run before page renders
-// to prevent flash of unoptimized content (FOUC).
-//
-// PERFORMANCE ANTI-PATTERN: loaded without async/defer + sync XHR
-// WORKSHOP FIX #1: add async attribute to the <script> tag in layout.tsx
-// ============================================================
-
 (function (window) {
   var OptimizeHub = {
     config: null,

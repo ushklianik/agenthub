@@ -75,8 +75,6 @@ export default async function AgentDetailPage({
               ))}
             </ul>
           </div>
-
-          {/* Reviews placeholder — hookpoint for future WebSocket anti-pattern */}
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
             <h2 className="text-lg font-semibold text-white mb-4">Reviews</h2>
             <div className="space-y-4">

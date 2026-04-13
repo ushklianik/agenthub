@@ -15,13 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
-        {/* =====================================================
-            PERFORMANCE ANTI-PATTERN: Parser-blocking third-party script
-            OptimizeHub A/B SDK loaded without async/defer.
-            Script also makes a synchronous XHR to /api/ab-config
-            which blocks the main thread for ~5s waiting for config.
-            WORKSHOP FIX #1: Add async attribute → <script async src="/js/reveal.js">
-            ===================================================== */}
         <script src="/js/reveal.js"></script>
       </head>
       <body className="min-h-full flex flex-col bg-[#0f0f1a] text-slate-200">

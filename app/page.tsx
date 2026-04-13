@@ -9,24 +9,6 @@ const CATEGORIES = ["Analytics", "Development", "Content", "Support", "Sales", "
 export default function HomePage() {
   return (
     <>
-      {/* =====================================================
-          HERO SECTION — LCP Anti-Pattern Stack
-          Three sins, three surgical fixes:
-
-          SIN #1: <script src="/js/reveal.js"> in <head> (layout.tsx)
-            Parser-blocking + heavy CPU → everything waits for it
-            WORKSHOP FIX #1: Delete that <script> line from layout.tsx
-
-          SIN #2: data-src instead of src on this <img>
-            No src in HTML → preload scanner finds nothing → no early fetch
-            reveal.js sets src only AFTER computation completes
-            WORKSHOP FIX #2: Change data-src="/images/hero.png" to src=
-
-          SIN #3: style={{ display: "none" }} + loading="lazy"
-            Even after src loads, image stays hidden until JS shows it
-            loading="lazy" adds an extra viewport-check gate
-            WORKSHOP FIX #3: Remove style={{ display: "none" }}
-          ===================================================== */}
       <section className="mx-auto max-w-7xl w-full px-6 py-12 flex flex-col lg:flex-row gap-10 items-center">
         {/* Left: hero image — contained with rounded corners */}
         <div className="lg:w-3/5 rounded-2xl overflow-hidden shadow-2xl shadow-violet-900/30 flex-shrink-0">
